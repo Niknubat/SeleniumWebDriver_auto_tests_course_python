@@ -2,6 +2,16 @@
 # Чтобы запустить тест с нужной маркировкой, нужно передать в командной строке параметр -m и нужную метку
 # pytest -s -v -m smoke test_fixture8.py
 
+# Маркировка тестов часть 2
+# Инверсия
+#Для запуска всех тестов, не отмеченных как smoke, нужно выполнить команду:
+# pytest -s -v -m "not smoke" test_fixture8.py
+
+# Объединение тестов с разными маркировками
+# Для запуска тестов с разными метками можно использовать логическое ИЛИ. Запустим smoke и regression-тесты:
+# pytest -s -v -m "smoke or regression" test_fixture8.py
+
+
 import pytest
 from selenium import webdriver
 
