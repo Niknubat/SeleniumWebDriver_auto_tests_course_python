@@ -44,3 +44,20 @@ def test_guest_should_see_login_link(browser, language):
     #
     #     def test_guest_should_see_navbar_element(self, browser, language):
     #         # этот тест тоже запустится дважды
+
+# "обратите внимание, что внутри декоратора имя параметра оборачивается в кавычки"
+# Это касается только строковых значений, однако как оказалось туда можно передать любой объект
+# в том числе и словарь, а в последствии распаковать его значения и ключи
+
+# Пример:
+# languages = [
+#     ("ru", "русский"),
+#     ("de", "немецкий"),
+#     ("ua", "украинский"),
+#     ("en-gb", "английский")
+# ]
+#
+# @pytest.mark.parametrize("code, lang", languages)
+# def test_guest_should_see_login_link(browser, code, lang)
+#     link = "http://selenium1py.pythonanywhere.com/{}/".format(code)
+#     print("Проверяемый язык %s" % lang)
