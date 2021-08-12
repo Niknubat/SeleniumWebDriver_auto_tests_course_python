@@ -20,7 +20,7 @@ def browser():
 
 #   Передача параметров в командной строке
 def pytest_addoption(parser):   # встроенная функция pytest_addoption
-    # В таком случае в коммандной строке обязательно указывается какой браузер запустить
+    # В таком случае в коммандной строке обязательно нужно указывать, какой браузер запустить
     # parser.addoption('--browser_name', action='store', default=None,
                      # help="Choose browser: chrome or firefox")
     # По умолчанию хром - если не вписывать параметр в ком строке
