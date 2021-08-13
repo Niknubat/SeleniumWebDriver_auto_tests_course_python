@@ -1,4 +1,4 @@
-# Наличие элемента на странице проверил 3 способами(активным оставил способ который мне наиболее понравился)
+# Наличие элемента на странице проверил 4 способами(активным оставил способ который мне наиболее понравился)
 # Команда смены/выбора языка: pytest --language=es test_items.py
 
 from selenium.common.exceptions import NoSuchElementException  # Для первого способа
@@ -30,4 +30,13 @@ def test_no_button_shopping_cart(browser):
     # button_submit = browser.find_element_by_css_selector("button.btn-add-to-basket")
     # class_attribute_button = button_submit.get_attribute("class")
     # assert 'btn-add-to-basket' in class_attribute_button, \
+    #     '!!!ERROR NoSuchElementException:"button.btn-add-to-basket"!!! NO BUTTON "Add to Shopping Cart"'
+
+    # # 4 способ - assert обрабатывается оба раза
+    # try:
+    #     WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, "button.btn-add-to-basket")))
+    #     button = True
+    # except Exception:
+    #     button = False
+    # assert button, \
     #     '!!!ERROR NoSuchElementException:"button.btn-add-to-basket"!!! NO BUTTON "Add to Shopping Cart"'
