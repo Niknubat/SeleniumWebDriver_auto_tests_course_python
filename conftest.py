@@ -27,6 +27,7 @@ def pytest_addoption(parser):  # встроенная функция pytest_addo
     # По умолчанию хром - если не вписывать параметр в ком строке
     parser.addoption('--browser_name', action='store', default="chrome",
                      help="Choose browser: chrome or firefox")  # Настройка открытия определенного браузера
+    # Команда смены/выбора языка: pytest --language=es test_items.py
     parser.addoption('--language', action='store', default=None,
                      help="Choose language: ru, en, es, ... (etc.)")  # Изменение настроек языка браузера
 
