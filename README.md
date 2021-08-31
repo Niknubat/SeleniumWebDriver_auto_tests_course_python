@@ -1,6 +1,6 @@
 # SeleniumWebDriver_auto_tests_course_python
-# Домашние задания и заметки к курсу
-# https://stepik.org/course/575/syllabus
+## Домашние задания и заметки к курсу
+### https://stepik.org/course/575/syllabus
 
 ## Программа курса
 
