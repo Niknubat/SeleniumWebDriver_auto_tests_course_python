@@ -1,9 +1,11 @@
 # SeleniumWebDriver_auto_tests_course_python
 Домашние задания и заметки к курсу https://stepik.org/course/575/syllabus
+
 Программа курса
 
 1. Знакомимся с Selenium
-1.1 Введение
+
+3.1 Введение
  
 1.2 Запускаем браузер с помощью Selenium WebDriver
   
